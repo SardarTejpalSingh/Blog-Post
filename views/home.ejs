@@ -9,7 +9,7 @@
 
     <% if(newPost.postBody.length >100) {var s = newPost.postBody.substring(0, 100) + " ...";}else { var s = newPost.postBody;} %> 
     <p style="display: inline"><%= s  %> </p>
-    <a href="http://localhost:3000/posts/<%= newPost.title  %>">Read more</a>
+    <a href="http://localhost:3000/posts/<%= newPost._id  %>">Read more</a>
 <% }) %> 
 
 <%- include("partials/footer") %> 
